@@ -1,0 +1,17 @@
+Things I removed from the data sets:
+* Individual Wins and Losses 
+   * Reason: Do not provide context, total games played and w% give a better representation
+   * If we later want to evaluate individual player impact we can just pull the teams w% and compare that to player_games_played * player_win_% 
+* Fantasy Score:
+   * Can be added back later on but it serves as just a stat aggregate with arbitrary coefficients, so not entirely useful for any predictive models
+* Nickname: 
+   * Useless column 
+* Every single “rank” column
+   * Not entirely sure if the data there was correct
+   * We should calculate our own distributions given that we have every single players stats, that way we can do our own statistical analysis for things like percentiles (which is essentially what rank would be used for anyways), just giving us more freedom
+* Also removed (hopefully) every player not meeting our decided 58 games played minimum (46 games for 2011 lockout and 35 games for 1998 lockout)
+
+
+Things we need to discuss:
+* BLKA, PFD
+   * Not entirely sure if either is a particularly useful stat, also sources are vague on what exactly PFD is calculated off of
