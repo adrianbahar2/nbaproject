@@ -1,2 +1,2 @@
 # nbaproject
-Using NBA datasets to create a machine learning model for basketball predictions
+Creating a machine learning model (based on NBA datasets) for statistical predictions related to basketball
